@@ -51,7 +51,6 @@ console.log(stegosaurus.length);
 // What time period did tyrannosaurus live in?
 console.log(tyrannosaurus.period);
 
-
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
 console.log(tyrannosaurus.roar());
 
@@ -262,7 +261,7 @@ The zoos need to know their total animal population across the United States.  F
 */
 let populationTotal = 0;
 
-populationTotal = zooAnimals.reduce(function (accumulator, currentValue, element, zooAnimals) {
+populationTotal = zooAnimals.reduce((accumulator, currentValue, element, zooAnimals) => {
   currentValue = zooAnimals[element].population;
   return accumulator + currentValue;
 }, 0);
