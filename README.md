@@ -45,9 +45,11 @@ A closure is a function that is inside of another function and has access to the
 
 Implicit Binding: The this refers to whatever is to the left of the dot.
 
-Explicit Binding: Explicit binding uses .apply, .call and .bind.
+Explicit Binding: Explicit binding uses .apply, .call and .bind. .call() accepts a list of arguments which as the given values that this will refer to. .apply() is the same except it accepts a single array of arguments. .bind() is almost the same as .call() but instead of invoking the function it returns a new function.
 
 5. Why do we need super() in an extended class?
+
+We need it in order to access and call functions on an objects parent.
 
 ## Project Set up
 
