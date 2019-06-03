@@ -126,7 +126,7 @@ const graduates = [{
 Once you have the new array created, sort the universities alphabetically and log the result. */
 let universities = [];
 
-universities = graduates.map(index => index.university);
+universities = graduates.map(element => element.university);
 universities.sort();
 
 console.log(universities)
@@ -139,8 +139,8 @@ Name email@example.com
 Log the result of your new array. */
 let contactInfo = [];
 
-contactInfo = graduates.map(index => {
-  return `{${index.first_name} ${index.email}}`;
+contactInfo = graduates.map(element => {
+  return `{${element.first_name} ${element.email}}`;
 });
 
 console.log(contactInfo);
